@@ -74,8 +74,8 @@ public class FieldH : MonoBehaviour
         Player1.LetterSize = new Vector2(letterSize, letterSize);
         Player2.LetterSize = new Vector2(letterSize, letterSize);
         CreateField();
-        Player1Text.text = PlayerPrefs.GetString("Player1", "Гравець 1");
-        Player2Text.text = PlayerPrefs.GetString("Player2", "Гравець 2");
+        Player1Text.text = PlayerPrefs.GetString("Player1", "Player 1");
+        Player2Text.text = PlayerPrefs.GetString("Player2", "Player 2");
     }
 
     private void Update()

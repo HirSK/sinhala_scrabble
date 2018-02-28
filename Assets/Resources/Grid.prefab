@@ -50,7 +50,7 @@ MonoBehaviour:
   WordX3Material: {fileID: 2100000, guid: ed2011670e575734c8b45557368b3f91, type: 2}
   LetterX2Material: {fileID: 2100000, guid: a55a96d2cece9db4ca94e825127e4d7f, type: 2}
   LetterX3Material: {fileID: 2100000, guid: 8a25878f0f2497747be65653021c8077, type: 2}
-  TimerImage: {fileID: 0}
+  TimerImage: {fileID: 1000013238629494, guid: 2ed235c6a0f774142b5166563c65acbb, type: 2}
   TimerText: {fileID: 0}
   Player1Text: {fileID: 0}
   Player2Text: {fileID: 0}

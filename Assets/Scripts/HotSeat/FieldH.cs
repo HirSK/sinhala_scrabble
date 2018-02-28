@@ -55,13 +55,14 @@ public class FieldH : MonoBehaviour
     private float _timeRemaining;
     private List<TileH> _asterixTiles = new List<TileH>();
 
+	//when the grid is initialized at first...
     private void Start()
     {
-        CurrentTiles = new List<TileH>();
+        CurrentTiles = new List<TileH>();//just a list of tile objects...
         var conection = @"URI=file:" + Application.streamingAssetsPath + @"/words.db";
         _dbConnection = new SqliteConnection(conection);
         _dbConnection.Open();
-        _wordsFound = new List<TileH>();
+        _wordsFound = new List<TileH>();//just a list of tile objects...
         _timerEnabled = PlayerPrefs.GetInt("TimerEnabled") == 1;
         if (_timerEnabled)
         {
@@ -96,6 +97,7 @@ public class FieldH : MonoBehaviour
         }
     }
 
+	//creating the tile grid and initializing the tiles as game objects...
     private void CreateField()
     {
         Field = new TileH[NumberOfRows, NumberOfColumns];
@@ -113,14 +115,15 @@ public class FieldH : MonoBehaviour
                 FieldGrid.AddElement(i, j, newTile.gameObject);
             }
         }
-        Field[7, 7].CanDrop = true;
-        Field[7, 7].GetComponent<Image>().material = StartMaterial;
+        Field[7, 7].CanDrop = true;//setting the start tile to the activate state...
+        Field[7, 7].GetComponent<Image>().material = StartMaterial;//setting the red color to the start tile...
         AssignMaterials();
         AssignMultipliers();
     }
 
     #region Field generation
 
+	//assigning colors(materials) to the different tiles in the grid(as different tiles score diffrently)...
     private void AssignMaterials()
     {
         Field[0, 0].GetComponent<Image>().material = WordX3Material;
@@ -176,6 +179,7 @@ public class FieldH : MonoBehaviour
         Field[7, 11].GetComponent<Image>().material = LetterX2Material;
     }
 
+	//assigning score values according to the colors assigned to the tiles in the grid...
     private void AssignMultipliers()
     {
         Field[0, 0].WordMultiplier = 3;
@@ -233,6 +237,7 @@ public class FieldH : MonoBehaviour
 
     #endregion Field generation
 
+	//when the clock time is zero...
     private void OnEndTimer()
     {
         _timeRemaining = (float)_timerLength + 1;
@@ -242,49 +247,51 @@ public class FieldH : MonoBehaviour
 
     public void OnEndTurn()
     {
+		//print ("clicked it");
         if (CurrentTiles.Count > 0)
         {
-            if (CheckWords())
-            {
-                _turnsSkipped = 0;
-                CurrentTurn++;
-                var points = CountPoints();
-                if (CurrentPlayer == 1)
-                {
-                    Player1.ChangeBox(7 - Player1.CurrentLetters.Count);
-                    Player1.Score += points;
-                    if (Player1.CurrentLetters.Count == 0)
-                    {
-                        EndGame(Player1);
-                    }
-                    Player1.gameObject.SetActive(false);
-                    Player2.gameObject.SetActive(true);
-                    CurrentTiles.Clear();
-                    CurrentDirection = Direction.None;
-                    CurrentPlayer = 2;
-                    Controller.InvalidatePlayer(1, Player1.Score);
-                    isFirstTurn = false;
-                }
-                else
-                {
-                    Player2.ChangeBox(7 - Player2.CurrentLetters.Count);
-                    Player2.Score += points;
-                    if (Player2.CurrentLetters.Count == 0)
-                        EndGame(Player2);
-                    Player1.gameObject.SetActive(true);
-                    Player2.gameObject.SetActive(false);
-                    CurrentDirection = Direction.None;
-                    CurrentTiles.Clear();
-                    CurrentPlayer = 1;
-                    Controller.InvalidatePlayer(2, Player2.Score);
-                    isFirstTurn = false;
-                }
-                if (_timerEnabled)
-                    _timeRemaining = (float)_timerLength + 1;
-            }
-            else Controller.ShowNotExistError();
+			
+			if (CheckWords ()) {//if successfully words are being checked
+				
+				_turnsSkipped = 0;
+				CurrentTurn++;
+				var points = CountPoints ();
+				if (CurrentPlayer == 1) {
+					Player1.ChangeBox (7 - Player1.CurrentLetters.Count);
+					Player1.Score += points;
+					if (Player1.CurrentLetters.Count == 0) {
+						EndGame (Player1);
+					}
+					Player1.gameObject.SetActive (false);
+					Player2.gameObject.SetActive (true);
+					CurrentTiles.Clear ();
+					CurrentDirection = Direction.None;
+					CurrentPlayer = 2;
+					Controller.InvalidatePlayer (1, Player1.Score);
+					isFirstTurn = false;
+				} else {
+					Player2.ChangeBox (7 - Player2.CurrentLetters.Count);
+					Player2.Score += points;
+					if (Player2.CurrentLetters.Count == 0)
+						EndGame (Player2);
+					Player1.gameObject.SetActive (true);
+					Player2.gameObject.SetActive (false);
+					CurrentDirection = Direction.None;
+					CurrentTiles.Clear ();
+					CurrentPlayer = 1;
+					Controller.InvalidatePlayer (2, Player2.Score);
+					isFirstTurn = false;
+				}
+				if (_timerEnabled)
+					_timeRemaining = (float)_timerLength + 1;
+			} else {
+				Controller.ShowNotExistError ();
+
+			}
         }
-        else Controller.ShowZeroTilesError();
+        else 
+			Controller.ShowZeroTilesError();
+		
         _wordsFound = new List<TileH>();
     }
 
@@ -324,6 +331,7 @@ public class FieldH : MonoBehaviour
             _timeRemaining = (float)_timerLength + 1;
     }
 
+	//when skipping turns...
     public void OnSkipTurn()
     {
         CurrentDirection = Direction.None;
@@ -343,10 +351,11 @@ public class FieldH : MonoBehaviour
         }
         if (_timerEnabled)
             _timeRemaining = (float)_timerLength + 1;
-        if (++_turnsSkipped == 4)
+        if (++_turnsSkipped == 4) //if the number of turns skipped is 4 game ends...
             EndGame(null);
     }
 
+	//removing the current tiles... 
     public void OnRemoveAll()
     {
         for (var i = CurrentTiles.Count - 1; i >= 0; i--)
@@ -359,29 +368,30 @@ public class FieldH : MonoBehaviour
 
     #region Word checking
 
+	//returns true if word checking is successfull...
     private bool CheckWords()
     {
-        var words = CreateWords();
+        var words = CreateWords();//returns a list with start and end letters...
         _wordsFound = words;
-        var word = GetWord(words[0], words[1]);
+        var word = GetWord(words[0], words[1]);//return a string...
         if (_asterixTiles.Count != 0)
         {
-            var index1 = word.IndexOf('_');
+            var index1 = word.IndexOf('_');//get the index of the underscore...
             var index2 = 0;
             if (_asterixTiles.Count == 2)
-                index2 = word.IndexOf('_', index1 + 1);
-            var variants = GetAllWordVariants(word);
+                index2 = word.IndexOf('_', index1 + 1);//get the other index if asterix count is 2...
+            var variants = GetAllWordVariants(word);//get all the words included "word" in the database...
             SwitchDirection();
-            foreach (var variant in variants)
+            foreach (var variant in variants)//loop through similar words found
             {
                 _asterixTiles[0].TempLetter = variant[index1].ToString();
                 if (_asterixTiles.Count == 2)
                     _asterixTiles[1].TempLetter = variant[index2].ToString();
                 var successful = true;
-                for (var i = 3; i < words.Count; i += 2)
+                for (var i = 3; i < words.Count; i += 2)//loop until all the words array is finished
                 {
                     word = GetWord(words[i - 1], words[i]);
-                    if (!CheckWord(word))
+                    if (!CheckWord(word))//gets the count of the word apperas in the database is zero
                     {
                         successful = false;
                         break;
@@ -396,7 +406,7 @@ public class FieldH : MonoBehaviour
             SwitchDirection();
             return false;
         }
-        else
+        else//asterix count is zero
         {
             var successful = CheckWord(word);
             var i = 3;
@@ -412,15 +422,16 @@ public class FieldH : MonoBehaviour
         }
     }
 
+	//returns the start and end tiles array...
     private List<TileH> CreateWords()
     {
         _asterixTiles.Clear();
-        var res = new List<TileH>();
+        var res = new List<TileH>();//results list of tiles...
         if (CurrentDirection == Direction.None)
             CurrentDirection = Direction.Horizontal;
         TileH start, end;
-        CreateWord(CurrentTiles[0], out start, out end);
-        if (start == end)
+        CreateWord(CurrentTiles[0], out start, out end);//checks the start and end tiles...
+        if (start == end)//no word has made...
         {
             SwitchDirection();
             CreateWord(CurrentTiles[0], out start, out end);
@@ -428,6 +439,7 @@ public class FieldH : MonoBehaviour
         res.Add(start);
         res.Add(end);
         SwitchDirection();
+		//look for every tile in current tiles list and start and end tiles to res list...
         foreach (var tile in CurrentTiles)
         {
             CreateWord(tile, out start, out end);
@@ -448,15 +460,17 @@ public class FieldH : MonoBehaviour
         if (CurrentDirection == Direction.Vertical)
         {
             var j = start.Row;
+			//go vertically down while there is no letter...
             while (j < 15 && Field[j, start.Column].HasLetter)
             {
-                if (Field[j, start.Column].CurrentLetter.text.Equals("*"))
-                    if (!_asterixTiles.Contains(Field[j, start.Column]))
-                        _asterixTiles.Add(Field[j, start.Column]);
+                if (Field[j, start.Column].CurrentLetter.text.Equals("*"))//if a astrix meets while going down
+                    if (!_asterixTiles.Contains(Field[j, start.Column]))//if astrixtiles array does not contain that tile
+                        _asterixTiles.Add(Field[j, start.Column]);//add it to the array...
                 j++;
             }
-            wordStart = Field[j - 1, start.Column];
+            wordStart = Field[j - 1, start.Column];//get the word start position... 
             j = start.Row;
+			//go vertically up while there is no letter...
             while (j >= 0 && Field[j, start.Column].HasLetter)
             {
                 if (Field[j, start.Column].CurrentLetter.text.Equals("*"))
@@ -464,11 +478,12 @@ public class FieldH : MonoBehaviour
                         _asterixTiles.Add(Field[j, start.Column]);
                 j--;
             }
-            wordEnd = Field[j + 1, start.Column];
+            wordEnd = Field[j + 1, start.Column];//get the word end position...
         }
-        else
+        else//search horizontally...
         {
             var j = start.Column;
+			//go horizontally rightwards...
             while (j >= 0 && Field[start.Row, j].HasLetter)
             {
                 if (Field[start.Row, j].CurrentLetter.text.Equals("*"))
@@ -478,6 +493,7 @@ public class FieldH : MonoBehaviour
             }
             wordStart = Field[start.Row, j + 1];
             j = start.Column;
+			//go horizontally backwords...
             while (j < 15 && Field[start.Row, j].HasLetter)
             {
                 if (Field[j, start.Column].CurrentLetter.text.Equals("*"))
@@ -549,6 +565,7 @@ public class FieldH : MonoBehaviour
         CurrentDirection = CurrentDirection == Direction.Horizontal ? Direction.Vertical : Direction.Horizontal;
     }
 
+	//building the word with start and end tiles given...
     private string GetWord(TileH begin, TileH end)
     {
         if (CurrentDirection == Direction.Vertical)
@@ -556,15 +573,15 @@ public class FieldH : MonoBehaviour
             var sb = new StringBuilder();
             for (var j = begin.Row; j >= end.Row; j--)
             {
-                if (!String.IsNullOrEmpty(Field[j, begin.Column].TempLetter))
-                    sb.Append(Field[j, begin.Column].TempLetter);
+                if (!String.IsNullOrEmpty(Field[j, begin.Column].TempLetter))//if the letter is not null...
+                    sb.Append(Field[j, begin.Column].TempLetter);//append it to the string...
                 else if (Field[j, begin.Column].CurrentLetter.text.Equals("*"))
                     sb.Append('_');
-                else sb.Append(Field[j, begin.Column].CurrentLetter.text);
+                else sb.Append(Field[j, begin.Column].CurrentLetter.text);//if null or empty append it...
             }
             return sb.ToString();
         }
-        else
+        else//build word horizontaly...
         {
             var sb = new StringBuilder();
             for (var j = begin.Column; j <= end.Column; j++)
@@ -579,31 +596,37 @@ public class FieldH : MonoBehaviour
         }
     }
 
+	//returns a list with the given word included in the database...
     private List<string> GetAllWordVariants(string word)
     {
-        var sql = "SELECT * FROM AllWords WHERE Word like \"" + word.ToLower() + "\"";
-        var command = new SqliteCommand(sql, _dbConnection);
-        var reader = command.ExecuteReader();
-        if (reader.HasRows)
-        {
-            var res = new List<string>();
-            while (reader.Read())
-            {
-                res.Add(reader.GetString(0));
-            }
-            reader.Close();
-            return res;
-        }
-        reader.Close();
-        return null;
+         var sql = "SELECT * FROM AllWords WHERE Word like \"" + word.ToLower() + "\"";
+         var command = new SqliteCommand(sql, _dbConnection);
+         var reader = command.ExecuteReader();
+         if (reader.HasRows)
+         {
+             var res = new List<string>();
+             while (reader.Read())
+             {
+                 res.Add(reader.GetString(0));
+             }
+             reader.Close();
+             return res;
+         }
+         reader.Close();
+         return null;
+        /*var res = new List<string>() {"bad","bcd","ab" };
+        return res;*/
+        
+
     }
 
+	//returns true if the word count found in the db is not zero
     private bool CheckWord(string word)
     {
         var sql = "SELECT count(*) FROM AllWords WHERE Word like \"" + word.ToLower() + "\"";
         var command = new SqliteCommand(sql, _dbConnection);
         var inp = command.ExecuteScalar();
-        return Convert.ToInt32(inp) != 0;
+        return Convert.ToInt32(inp) != 0;//gets the equivalent 32 bit number and returns it if not equal to zero
     }
 
     #endregion Word checking

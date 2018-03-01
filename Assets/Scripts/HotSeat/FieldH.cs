@@ -599,7 +599,7 @@ public class FieldH : MonoBehaviour
 	//returns a list with the given word included in the database...
     private List<string> GetAllWordVariants(string word)
     {
-         var sql = "SELECT * FROM AllWords WHERE Word like \"" + word.ToLower() + "\"";
+        /* var sql = "SELECT * FROM AllWords WHERE Word like \"" + word.ToLower() + "\"";
          var command = new SqliteCommand(sql, _dbConnection);
          var reader = command.ExecuteReader();
          if (reader.HasRows)
@@ -613,7 +613,10 @@ public class FieldH : MonoBehaviour
              return res;
          }
          reader.Close();
-         return null;
+         return null;*/
+
+		List<string> res = new List<string>(new string[] {"bad","bcd","ab","abc","nsd","ac","abcd","dac" });
+		return res;
         /*var res = new List<string>() {"bad","bcd","ab" };
         return res;*/
         
@@ -623,10 +626,19 @@ public class FieldH : MonoBehaviour
 	//returns true if the word count found in the db is not zero
     private bool CheckWord(string word)
     {
-        var sql = "SELECT count(*) FROM AllWords WHERE Word like \"" + word.ToLower() + "\"";
+        /*var sql = "SELECT count(*) FROM AllWords WHERE Word like \"" + word.ToLower() + "\"";
         var command = new SqliteCommand(sql, _dbConnection);
         var inp = command.ExecuteScalar();
-        return Convert.ToInt32(inp) != 0;//gets the equivalent 32 bit number and returns it if not equal to zero
+        return Convert.ToInt32(inp) != 0;*///gets the equivalent 32 bit number and returns it if not equal to zero
+		
+		List<string> res = new List<string>(new string[] {"bad","bcd","ab","abc","nsd","ac","abcd","dac" });
+
+		foreach(string item in res)
+		{
+			if(item.Contains(word))
+				return true;			
+		}
+		return false;
     }
 
     #endregion Word checking

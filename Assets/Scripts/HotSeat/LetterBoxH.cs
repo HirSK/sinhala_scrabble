@@ -15,7 +15,26 @@ public class LetterBoxH : MonoBehaviour
             {"а", 1},
             {"b", 2},
             {"c", 1},
-            {"d", 3}
+            {"d", 3},
+		{"e", 1},
+		{"f", 2},
+		{"g", 1},
+		{"h", 3},
+		{"i", 1},
+		{"j", 2},
+		{"k", 1},
+		{"l", 3},
+		{"m", 1},
+		{"n", 2},
+		{"o", 1},
+		{"p", 3},
+		{"q", 2},
+		{"r", 1},
+		{"s", 3},
+		{"t", 1},
+		{"u", 2},
+		{"v", 1}
+
             
         };
 
@@ -44,7 +63,8 @@ public class LetterBoxH : MonoBehaviour
         if (_allLetters == null)
             _allLetters = new List<string>
     {
-        "а","b","c","d","e","а","b","c","d","e","а"
+			"а","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v",
+			"а","b","c","d","e","f","g","h","i"
     };
         CurrentLetters = new List<LetterH>();
         _allLetters = _allLetters.OrderBy(letter => letter).ToList();

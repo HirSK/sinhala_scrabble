@@ -570,29 +570,41 @@ public class FieldH : MonoBehaviour
     {
         if (CurrentDirection == Direction.Vertical)
         {
-            var sb = new StringBuilder();
+            //var sb = new StringBuilder();
+			string sb = "";
             for (var j = begin.Row; j >= end.Row; j--)
             {
-                if (!String.IsNullOrEmpty(Field[j, begin.Column].TempLetter))//if the letter is not null...
-                    sb.Append(Field[j, begin.Column].TempLetter);//append it to the string...
-                else if (Field[j, begin.Column].CurrentLetter.text.Equals("*"))
-                    sb.Append('_');
-                else sb.Append(Field[j, begin.Column].CurrentLetter.text);//if null or empty append it...
+				if (!String.IsNullOrEmpty (Field [j, begin.Column].TempLetter))//if the letter is not null...
+                    //sb.Append(Field[j, begin.Column].TempLetter);//append it to the string...
+					sb += Field [j, begin.Column].TempLetter;
+				else if (Field [j, begin.Column].CurrentLetter.text.Equals ("*"))
+                    //sb.Append('_');
+					sb += "_";
+				else {
+					//sb.Append (Field [j, begin.Column].CurrentLetter.text);
+					sb += Field [j, begin.Column].CurrentLetter.text;
+				}//if null or empty append it...
+
             }
-            return sb.ToString();
+            return sb;
         }
         else//build word horizontaly...
         {
-            var sb = new StringBuilder();
+            //var sb = new StringBuilder();
+			string sb = "";
             for (var j = begin.Column; j <= end.Column; j++)
             {
-                if (!String.IsNullOrEmpty(Field[begin.Row, j].TempLetter))
-                    sb.Append(Field[begin.Row, j].TempLetter);
-                else if (Field[begin.Row, j].CurrentLetter.text.Equals("*"))
-                    sb.Append('_');
-                else sb.Append(Field[begin.Row, j].CurrentLetter.text);
+				if (!String.IsNullOrEmpty (Field [begin.Row, j].TempLetter))
+                    //sb.Append(Field[begin.Row, j].TempLetter);
+					sb += Field [begin.Row, j].TempLetter;
+				else if (Field [begin.Row, j].CurrentLetter.text.Equals ("*"))
+					sb += "_";
+				else {
+					//sb.Append (Field [begin.Row, j].CurrentLetter.text);
+					sb += Field [begin.Row, j].CurrentLetter.text;
+				}
             }
-            return sb.ToString();
+            return sb;
         }
     }
 
@@ -615,7 +627,7 @@ public class FieldH : MonoBehaviour
          reader.Close();
          return null;*/
 
-		List<string> res = new List<string>(new string[] {"bad","bcd","ab","abc","nsd","ac","abcd","dac" });
+		List<string> res = new List<string>(new string[] { "අර", "රට", "මල", "කමත", "කර" });
 		return res;
         /*var res = new List<string>() {"bad","bcd","ab" };
         return res;*/
@@ -631,14 +643,18 @@ public class FieldH : MonoBehaviour
         var inp = command.ExecuteScalar();
         return Convert.ToInt32(inp) != 0;*///gets the equivalent 32 bit number and returns it if not equal to zero
 		
-		List<string> res = new List<string>(new string[] {"bad","bcd","ab","abc","nsd","ac","abcd","dac" });
+		string[] stringArray= {"අර","රට","මල","කමත","කර" };
+		print (word);
 
-		foreach(string item in res)
-		{
-			if(item.Contains(word))
-				return true;			
+		int pos = Array.IndexOf (stringArray,word);
+		if (pos > -1) {
+			print ("sucess");
+			return true;
+		} else {
+			print ("false");
+			return false;
 		}
-		return false;
+
     }
 
     #endregion Word checking

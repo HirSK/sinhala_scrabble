@@ -32,3 +32,37 @@ E:\Third Year\Professional Practice\unity_projects\Sample\Temp\bin\Debug\UnityEn
 E:\Third Year\Professional Practice\unity_projects\Sample\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 E:\Third Year\Professional Practice\unity_projects\Sample\obj\Debug\Assembly-CSharp.dll
 E:\Third Year\Professional Practice\unity_projects\Sample\obj\Debug\Assembly-CSharp.pdb
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\Assembly-CSharp.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\Assembly-CSharp.pdb
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\Mono.Data.Sqlite.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\nunit.framework.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\System.Data.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEditor.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.Analytics.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.HoloLens.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.Networking.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.TestRunner.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.Timeline.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.UI.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\Mono.Cecil.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\Unity.SerializationLogic.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\Unity.DataContract.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\ExCSS.Unity.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\Unity.UNetWeaver.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\Unity.CecilTools.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.xml
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEditor.xml
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.UI.xml
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.Networking.xml
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.TestRunner.xml
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\nunit.framework.xml
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.Timeline.xml
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.Analytics.xml
+F:\Unity\sinhala_scrabble\Temp\bin\Debug\UnityEngine.HoloLens.xml
+F:\Unity\sinhala_scrabble\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+F:\Unity\sinhala_scrabble\obj\Debug\Assembly-CSharp.dll
+F:\Unity\sinhala_scrabble\obj\Debug\Assembly-CSharp.pdb

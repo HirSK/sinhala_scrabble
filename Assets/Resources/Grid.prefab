@@ -25,7 +25,7 @@ GameObject:
   m_Component:
   - component: {fileID: 22481450}
   - component: {fileID: 11489584}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ MonoBehaviour:
   WordX3Material: {fileID: 2100000, guid: ed2011670e575734c8b45557368b3f91, type: 2}
   LetterX2Material: {fileID: 2100000, guid: a55a96d2cece9db4ca94e825127e4d7f, type: 2}
   LetterX3Material: {fileID: 2100000, guid: 8a25878f0f2497747be65653021c8077, type: 2}
-  TimerImage: {fileID: 1000013238629494, guid: 2ed235c6a0f774142b5166563c65acbb, type: 2}
+  TimerImage: {fileID: 0}
   TimerText: {fileID: 0}
   Player1Text: {fileID: 0}
   Player2Text: {fileID: 0}
@@ -97,7 +97,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -25, y: -11}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22499048
@@ -116,8 +116,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 389.5, y: 9}
-  m_SizeDelta: {x: -400.63, y: -14}
+  m_AnchoredPosition: {x: 241.08, y: 27.481995}
+  m_SizeDelta: {x: -400.6, y: -22.5}
   m_Pivot: {x: 0, y: 0}
 --- !u!1001 &100100000
 Prefab:

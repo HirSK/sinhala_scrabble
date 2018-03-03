@@ -25,54 +25,22 @@ Platform assembly: F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.Data.d
 Loading F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.Data.dll into Unity Child Domain
 Platform assembly: F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.dll (this message is harmless)
 Platform assembly: F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.051 seconds
+- Completed reload, in  0.031 seconds
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.753381 ms
+UnloadTime: 59.337846 ms
 Platform assembly: F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.Transactions.dll (this message is harmless)
 Platform assembly: F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.Xml.dll (this message is harmless)
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.393579 ms
+UnloadTime: 2.394434 ms
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 577.
-Total: 0.440483 ms (FindLiveObjects: 0.034639 ms CreateObjectMapping: 0.022665 ms MarkObjects: 0.367354 ms  DeleteObjects: 0.014967 ms)
-
-yess
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-yess
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-yess
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-yess
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-yess
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-yess
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-yess
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-yess
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Total: 0.565786 ms (FindLiveObjects: 0.054312 ms CreateObjectMapping: 0.022665 ms MarkObjects: 0.472130 ms  DeleteObjects: 0.016250 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 3fe8 -> priority: 1 
-  Thread -> id: 4438 -> priority: 1 
-  Thread -> id: 389c -> priority: 1 
-  Thread -> id: 2d0c -> priority: 1 
+  Thread -> id: 2b94 -> priority: 1 
+  Thread -> id: 69c -> priority: 1 
+  Thread -> id: 3a6c -> priority: 1 
+  Thread -> id: 15c8 -> priority: 1 

@@ -278,6 +278,7 @@ public class FieldH : MonoBehaviour
 				if (_timerEnabled)
 					_timeRemaining = (float)_timerLength + 1;
 			} else {
+                this.OnRemoveAll();
 				Controller.ShowNotExistError ();
 
 			}
@@ -667,6 +668,8 @@ public class FieldH : MonoBehaviour
             print("yess");
             return true;
         }
+       
+       
         return false;
 
 

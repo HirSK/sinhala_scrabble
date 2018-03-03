@@ -25,7 +25,54 @@ Platform assembly: F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.Data.d
 Loading F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.Data.dll into Unity Child Domain
 Platform assembly: F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.dll (this message is harmless)
 Platform assembly: F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.023 seconds
+- Completed reload, in  0.051 seconds
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.753381 ms
+Platform assembly: F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.Transactions.dll (this message is harmless)
+Platform assembly: F:\Unity\sinhala_scrabble\scrabble_Data\Managed\System.Xml.dll (this message is harmless)
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.393579 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 577.
+Total: 0.440483 ms (FindLiveObjects: 0.034639 ms CreateObjectMapping: 0.022665 ms MarkObjects: 0.367354 ms  DeleteObjects: 0.014967 ms)
+
+yess
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+yess
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+yess
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+yess
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+yess
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+yess
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+yess
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+yess
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 3fe8 -> priority: 1 
+  Thread -> id: 4438 -> priority: 1 
+  Thread -> id: 389c -> priority: 1 
+  Thread -> id: 2d0c -> priority: 1 

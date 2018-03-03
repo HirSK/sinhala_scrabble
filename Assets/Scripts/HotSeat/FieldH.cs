@@ -278,8 +278,12 @@ public class FieldH : MonoBehaviour
 				if (_timerEnabled)
 					_timeRemaining = (float)_timerLength + 1;
 			} else {
-                this.OnRemoveAll();
-				Controller.ShowNotExistError ();
+                this.OnRemoveAll(); // go back tiles when word is not exist
+                if(!Field[5, 5].HasLetter)
+                {
+                    Field[5, 5].CanDrop = true;
+                }
+                Controller.ShowNotExistError ();
 
 			}
         }

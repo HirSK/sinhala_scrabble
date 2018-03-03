@@ -21,7 +21,11 @@ public class LetterBoxH : MonoBehaviour
 		{"ට", 1},
 		{"ඌ", 3},
 		
-		{"ච", 2}
+		{"ච", 2},
+            {"DL", 0},
+            {"TL", 0 },
+            {"DW" , 0},
+            {"TW" , 0 }
 
 
             

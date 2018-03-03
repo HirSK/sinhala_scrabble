@@ -127,55 +127,98 @@ public class FieldH : MonoBehaviour
     private void AssignMaterials()
     {
         Field[0, 0].GetComponent<Image>().material = WordX3Material;
+        Field[0, 0].CurrentLetter.text = "TW";
         Field[0, 10].GetComponent<Image>().material = WordX3Material;
+        Field[0, 10].CurrentLetter.text = "TW";
         Field[10, 0].GetComponent<Image>().material = WordX3Material;
+        Field[10, 0].CurrentLetter.text = "TW";
         Field[10, 10].GetComponent<Image>().material = WordX3Material;
+        Field[10, 10].CurrentLetter.text = "TW";
         Field[0, 5].GetComponent<Image>().material = WordX3Material;
+        Field[0, 5].CurrentLetter.text = "TW";
         Field[10, 5].GetComponent<Image>().material = WordX3Material;
+        Field[10, 5].CurrentLetter.text = "TW";
         Field[5, 0].GetComponent<Image>().material = WordX3Material;
+        Field[5, 0].CurrentLetter.text = "TW";
         Field[7, 10].GetComponent<Image>().material = WordX3Material;
+        Field[7, 10].CurrentLetter.text = "TW";
         for (var i = 1; i < 3; i++)
         {
             Field[i, i].GetComponent<Image>().material = WordX2Material;
+            Field[i, i].CurrentLetter.text = "DW";
             Field[i, NumberOfRows - i - 1].GetComponent<Image>().material = WordX2Material;
+            Field[i, NumberOfRows - i - 1].CurrentLetter.text = "DW";
             Field[NumberOfRows - i - 1, i].GetComponent<Image>().material = WordX2Material;
+            Field[NumberOfRows - i - 1, i].CurrentLetter.text = "DW";
             Field[NumberOfRows - i - 1, NumberOfRows - i - 1].GetComponent<Image>().material = WordX2Material;
+            Field[NumberOfRows - i - 1, NumberOfRows - i - 1].CurrentLetter.text = "DW";
         }
         Field[3, 1].GetComponent<Image>().material = LetterX3Material;
+        Field[3, 1].CurrentLetter.text = "TL";
         Field[3, 3].GetComponent<Image>().material = LetterX3Material;
+        Field[3, 3].CurrentLetter.text = "TL";
         Field[3, 7].GetComponent<Image>().material = LetterX3Material;
+        Field[3, 7].CurrentLetter.text = "TL";
         Field[3, 9].GetComponent<Image>().material = LetterX3Material;
+        Field[3, 9].CurrentLetter.text = "TL";
         Field[7, 1].GetComponent<Image>().material = LetterX3Material;
+        Field[7, 1].CurrentLetter.text = "TL";
         Field[7, 3].GetComponent<Image>().material = LetterX3Material;
+        Field[7, 3].CurrentLetter.text = "TL";
         Field[7, 7].GetComponent<Image>().material = LetterX3Material;
+        Field[7, 7].CurrentLetter.text = "TL";
         Field[7, 9].GetComponent<Image>().material = LetterX3Material;
+        Field[7, 9].CurrentLetter.text = "TL";
         Field[1, 3].GetComponent<Image>().material = LetterX3Material;
+        Field[1, 3].CurrentLetter.text = "TL";
         Field[1, 7].GetComponent<Image>().material = LetterX3Material;
+        Field[1, 7].CurrentLetter.text = "TL";
         Field[9, 3].GetComponent<Image>().material = LetterX3Material;
+        Field[9, 3].CurrentLetter.text = "TL";
         Field[9, 7].GetComponent<Image>().material = LetterX3Material;
+        Field[9, 7].CurrentLetter.text = "TL";
         Field[0, 3].GetComponent<Image>().material = LetterX2Material;
+        Field[0, 3].CurrentLetter.text = "DL";
         Field[0, 7].GetComponent<Image>().material = LetterX2Material;
+        Field[0, 7].CurrentLetter.text = "DL";
         Field[10, 3].GetComponent<Image>().material = LetterX2Material;
+        Field[10, 3].CurrentLetter.text = "DL";
         Field[10, 7].GetComponent<Image>().material = LetterX2Material;
+        Field[10, 7].CurrentLetter.text = "DL";
         Field[2, 4].GetComponent<Image>().material = LetterX2Material;
+        Field[2, 4].CurrentLetter.text = "DL";
         Field[2, 6].GetComponent<Image>().material = LetterX2Material;
+        Field[2, 6].CurrentLetter.text = "DL";
         Field[8, 4].GetComponent<Image>().material = LetterX2Material;
+        Field[8, 4].CurrentLetter.text = "DL";
         Field[8, 6].GetComponent<Image>().material = LetterX2Material;
+        Field[8, 6].CurrentLetter.text = "DL";
         Field[3, 0].GetComponent<Image>().material = LetterX2Material;
+        Field[3, 0].CurrentLetter.text = "DL";
         Field[3, 5].GetComponent<Image>().material = LetterX2Material;
+        Field[3, 5].CurrentLetter.text = "DL";
         Field[3, 10].GetComponent<Image>().material = LetterX2Material;
+        Field[3, 10].CurrentLetter.text = "DL";
         Field[7, 0].GetComponent<Image>().material = LetterX2Material;
+        Field[7, 0].CurrentLetter.text = "DL";
         Field[7, 5].GetComponent<Image>().material = LetterX2Material;
+        Field[7, 5].CurrentLetter.text = "DL";
         Field[7, 10].GetComponent<Image>().material = LetterX2Material;
+        Field[7, 10].CurrentLetter.text = "DL";
         Field[4, 2].GetComponent<Image>().material = LetterX2Material;
-       
+        Field[4, 2].CurrentLetter.text = "DL";
         Field[5, 7].GetComponent<Image>().material = LetterX2Material;
+        Field[5, 7].CurrentLetter.text = "DL";
         Field[6, 2].GetComponent<Image>().material = LetterX2Material;
+        Field[6, 2].CurrentLetter.text = "DL";
         Field[4, 8].GetComponent<Image>().material = LetterX2Material;
-       
+        Field[4, 8].CurrentLetter.text = "DL";
         Field[6, 8].GetComponent<Image>().material = LetterX2Material;
+        Field[6, 8].CurrentLetter.text = "DL";
         Field[5, 3].GetComponent<Image>().material = LetterX2Material;
+        Field[5, 3].CurrentLetter.text = "DL";
         Field[5, 7].GetComponent<Image>().material = LetterX2Material;
+        Field[5, 7].CurrentLetter.text = "DL";
     }
 
 	//assigning score values according to the colors assigned to the tiles in the grid...

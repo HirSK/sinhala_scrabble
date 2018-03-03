@@ -642,18 +642,55 @@ public class FieldH : MonoBehaviour
         var command = new SqliteCommand(sql, _dbConnection);
         var inp = command.ExecuteScalar();
         return Convert.ToInt32(inp) != 0;*///gets the equivalent 32 bit number and returns it if not equal to zero
-		
-		string[] stringArray= {"අර","රට","මල","කමත","කර" };
-		print (word);
 
-		int pos = Array.IndexOf (stringArray,word);
-		if (pos > -1) {
-			print ("sucess");
-			return true;
-		} else {
-			print ("false");
-			return false;
-		}
+        //loading the text files and searching the word
+
+       
+
+        TextAsset textasset = (TextAsset)Resources.Load("total_words");
+
+        string content = textasset.text;
+        string txt;
+        System.IO.StringReader reader = null;
+
+        List<string> lines = new List<string>();
+
+        reader = new System.IO.StringReader(textasset.text);
+        if (reader == null)
+        {
+            Debug.Log("puzzles.txt not found or not readable");
+        }
+        else
+        {
+            // Read each line from the file
+            while ((txt = reader.ReadLine()) != null)
+                //Debug.Log("-->" + txt);
+                lines.Add(txt.Trim());
+
+        }
+
+        if (lines.Contains(word))
+        {
+            print("yess");
+            return true;
+        }
+        return false;
+
+
+
+
+
+        /* string[] stringArray= {"අර","රට","මල","කමත","කර" };
+         print (word);
+
+         int pos = Array.IndexOf (stringArray,word);
+         if (pos > -1) {
+             print ("sucess");
+             return true;
+         } else {
+             print ("false");
+             return false;
+         }*/
 
     }
 

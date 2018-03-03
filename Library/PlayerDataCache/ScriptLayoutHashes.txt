@@ -9,7 +9,7 @@ cf39becdc3e92f2d75753756de76b637 Assembly-CSharp.dll:.LetterBoxH
 47139f8efaa71c482853e5ce9196edd0 Assembly-CSharp.dll:.StartController
 cc0606c73ea349d1b3eaf4ed5a94c1ea Assembly-CSharp.dll:.LetterBoxLAN
 a3a1da93183aca48551136c893f1ef7a Assembly-CSharp.dll:.BonusController
-bdab82bf3722cd2927e7be1cfa337ea0 Assembly-CSharp.dll:.TileH
+c7328623d939c56d38219545445de52c Assembly-CSharp.dll:.TileH
 e044ea934a9c2b98a60fae1b3895f19b Assembly-CSharp.dll:.SettingsController
 7397d5d02e77caae36f624932a36e296 Assembly-CSharp.dll:.HelpBehaviour
 e877ed4b376c174948104dba4601c1bc Assembly-CSharp.dll:.MainMenu

@@ -3593,7 +3593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 567.5, y: -8.899002}
+  m_AnchoredPosition: {x: 567.5, y: -8.898987}
   m_SizeDelta: {x: 153, y: 76.101}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1366782260
@@ -4039,19 +4039,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11489584, guid: cda950a1eb858b542a7753502d631eda, type: 2}
       propertyPath: RowCount
-      value: 15
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 11489584, guid: cda950a1eb858b542a7753502d631eda, type: 2}
       propertyPath: ColCount
-      value: 15
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 11425330, guid: cda950a1eb858b542a7753502d631eda, type: 2}
       propertyPath: NumberOfRows
-      value: 15
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 11425330, guid: cda950a1eb858b542a7753502d631eda, type: 2}
       propertyPath: NumberOfColumns
-      value: 15
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cda950a1eb858b542a7753502d631eda, type: 2}
@@ -5245,7 +5245,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 45
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 13

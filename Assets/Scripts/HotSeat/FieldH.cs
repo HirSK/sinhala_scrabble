@@ -115,8 +115,8 @@ public class FieldH : MonoBehaviour
                 FieldGrid.AddElement(i, j, newTile.gameObject);
             }
         }
-        Field[7, 7].CanDrop = true;//setting the start tile to the activate state...
-        Field[7, 7].GetComponent<Image>().material = StartMaterial;//setting the red color to the start tile...
+        Field[5, 5].CanDrop = true;//setting the start tile to the activate state...
+        Field[5, 5].GetComponent<Image>().material = StartMaterial;//setting the red color to the start tile...
         AssignMaterials();
         AssignMultipliers();
     }
@@ -127,112 +127,105 @@ public class FieldH : MonoBehaviour
     private void AssignMaterials()
     {
         Field[0, 0].GetComponent<Image>().material = WordX3Material;
-        Field[0, 14].GetComponent<Image>().material = WordX3Material;
-        Field[14, 0].GetComponent<Image>().material = WordX3Material;
-        Field[14, 14].GetComponent<Image>().material = WordX3Material;
-        Field[0, 7].GetComponent<Image>().material = WordX3Material;
-        Field[14, 7].GetComponent<Image>().material = WordX3Material;
-        Field[7, 0].GetComponent<Image>().material = WordX3Material;
-        Field[7, 14].GetComponent<Image>().material = WordX3Material;
-        for (var i = 1; i < 5; i++)
+        Field[0, 10].GetComponent<Image>().material = WordX3Material;
+        Field[10, 0].GetComponent<Image>().material = WordX3Material;
+        Field[10, 10].GetComponent<Image>().material = WordX3Material;
+        Field[0, 5].GetComponent<Image>().material = WordX3Material;
+        Field[10, 5].GetComponent<Image>().material = WordX3Material;
+        Field[5, 0].GetComponent<Image>().material = WordX3Material;
+        Field[7, 10].GetComponent<Image>().material = WordX3Material;
+        for (var i = 1; i < 3; i++)
         {
             Field[i, i].GetComponent<Image>().material = WordX2Material;
             Field[i, NumberOfRows - i - 1].GetComponent<Image>().material = WordX2Material;
             Field[NumberOfRows - i - 1, i].GetComponent<Image>().material = WordX2Material;
             Field[NumberOfRows - i - 1, NumberOfRows - i - 1].GetComponent<Image>().material = WordX2Material;
         }
-        Field[5, 1].GetComponent<Image>().material = LetterX3Material;
-        Field[5, 5].GetComponent<Image>().material = LetterX3Material;
-        Field[5, 9].GetComponent<Image>().material = LetterX3Material;
-        Field[5, 13].GetComponent<Image>().material = LetterX3Material;
-        Field[9, 1].GetComponent<Image>().material = LetterX3Material;
-        Field[9, 5].GetComponent<Image>().material = LetterX3Material;
-        Field[9, 9].GetComponent<Image>().material = LetterX3Material;
-        Field[9, 13].GetComponent<Image>().material = LetterX3Material;
-        Field[1, 5].GetComponent<Image>().material = LetterX3Material;
-        Field[1, 9].GetComponent<Image>().material = LetterX3Material;
-        Field[13, 5].GetComponent<Image>().material = LetterX3Material;
-        Field[13, 9].GetComponent<Image>().material = LetterX3Material;
+        Field[3, 1].GetComponent<Image>().material = LetterX3Material;
+        Field[3, 3].GetComponent<Image>().material = LetterX3Material;
+        Field[3, 7].GetComponent<Image>().material = LetterX3Material;
+        Field[3, 9].GetComponent<Image>().material = LetterX3Material;
+        Field[7, 1].GetComponent<Image>().material = LetterX3Material;
+        Field[7, 3].GetComponent<Image>().material = LetterX3Material;
+        Field[7, 7].GetComponent<Image>().material = LetterX3Material;
+        Field[7, 9].GetComponent<Image>().material = LetterX3Material;
+        Field[1, 3].GetComponent<Image>().material = LetterX3Material;
+        Field[1, 7].GetComponent<Image>().material = LetterX3Material;
+        Field[9, 3].GetComponent<Image>().material = LetterX3Material;
+        Field[9, 7].GetComponent<Image>().material = LetterX3Material;
         Field[0, 3].GetComponent<Image>().material = LetterX2Material;
-        Field[0, 11].GetComponent<Image>().material = LetterX2Material;
-        Field[14, 3].GetComponent<Image>().material = LetterX2Material;
-        Field[14, 11].GetComponent<Image>().material = LetterX2Material;
+        Field[0, 7].GetComponent<Image>().material = LetterX2Material;
+        Field[10, 3].GetComponent<Image>().material = LetterX2Material;
+        Field[10, 7].GetComponent<Image>().material = LetterX2Material;
+        Field[2, 4].GetComponent<Image>().material = LetterX2Material;
         Field[2, 6].GetComponent<Image>().material = LetterX2Material;
-        Field[2, 8].GetComponent<Image>().material = LetterX2Material;
-        Field[12, 6].GetComponent<Image>().material = LetterX2Material;
-        Field[12, 8].GetComponent<Image>().material = LetterX2Material;
-        Field[3, 0].GetComponent<Image>().material = LetterX2Material;
-        Field[3, 7].GetComponent<Image>().material = LetterX2Material;
-        Field[3, 14].GetComponent<Image>().material = LetterX2Material;
-        Field[11, 0].GetComponent<Image>().material = LetterX2Material;
-        Field[11, 7].GetComponent<Image>().material = LetterX2Material;
-        Field[11, 14].GetComponent<Image>().material = LetterX2Material;
-        Field[6, 2].GetComponent<Image>().material = LetterX2Material;
-        Field[6, 6].GetComponent<Image>().material = LetterX2Material;
-        Field[6, 8].GetComponent<Image>().material = LetterX2Material;
-        Field[6, 12].GetComponent<Image>().material = LetterX2Material;
-        Field[8, 2].GetComponent<Image>().material = LetterX2Material;
+        Field[8, 4].GetComponent<Image>().material = LetterX2Material;
         Field[8, 6].GetComponent<Image>().material = LetterX2Material;
-        Field[8, 8].GetComponent<Image>().material = LetterX2Material;
-        Field[8, 12].GetComponent<Image>().material = LetterX2Material;
-        Field[7, 3].GetComponent<Image>().material = LetterX2Material;
-        Field[7, 11].GetComponent<Image>().material = LetterX2Material;
+        Field[3, 0].GetComponent<Image>().material = LetterX2Material;
+        Field[3, 5].GetComponent<Image>().material = LetterX2Material;
+        Field[3, 10].GetComponent<Image>().material = LetterX2Material;
+        Field[7, 0].GetComponent<Image>().material = LetterX2Material;
+        Field[7, 5].GetComponent<Image>().material = LetterX2Material;
+        Field[7, 10].GetComponent<Image>().material = LetterX2Material;
+        Field[4, 2].GetComponent<Image>().material = LetterX2Material;
+       
+        Field[5, 7].GetComponent<Image>().material = LetterX2Material;
+        Field[6, 2].GetComponent<Image>().material = LetterX2Material;
+        Field[4, 8].GetComponent<Image>().material = LetterX2Material;
+       
+        Field[6, 8].GetComponent<Image>().material = LetterX2Material;
+        Field[5, 3].GetComponent<Image>().material = LetterX2Material;
+        Field[5, 7].GetComponent<Image>().material = LetterX2Material;
     }
 
 	//assigning score values according to the colors assigned to the tiles in the grid...
     private void AssignMultipliers()
     {
         Field[0, 0].WordMultiplier = 3;
-        Field[0, 14].WordMultiplier = 3;
-        Field[14, 0].WordMultiplier = 3;
-        Field[14, 14].WordMultiplier = 3;
-        Field[0, 7].WordMultiplier = 3;
-        Field[14, 7].WordMultiplier = 3;
-        Field[7, 0].WordMultiplier = 3;
-        Field[7, 14].WordMultiplier = 3;
-        for (var i = 1; i < 5; i++)
+        Field[0, 10].WordMultiplier = 3;
+        Field[10, 0].WordMultiplier = 3;
+        Field[10, 10].WordMultiplier = 3;
+        Field[0, 5].WordMultiplier = 3;
+        Field[10, 5].WordMultiplier = 3;
+        Field[5, 0].WordMultiplier = 3;
+        Field[7, 10].WordMultiplier = 3;
+       
+        for (var i = 1; i < 3; i++)
         {
             Field[i, i].WordMultiplier = 2;
             Field[i, NumberOfRows - i - 1].WordMultiplier = 2;
             Field[NumberOfRows - i - 1, i].WordMultiplier = 2;
             Field[NumberOfRows - i - 1, NumberOfRows - i - 1].WordMultiplier = 2;
         }
-        Field[5, 1].LetterMultiplier = 3;
-        Field[5, 5].LetterMultiplier = 3;
-        Field[5, 9].LetterMultiplier = 3;
-        Field[5, 13].LetterMultiplier = 3;
-        Field[9, 1].LetterMultiplier = 3;
-        Field[9, 5].LetterMultiplier = 3;
-        Field[9, 9].LetterMultiplier = 3;
-        Field[9, 13].LetterMultiplier = 3;
-        Field[1, 5].LetterMultiplier = 3;
-        Field[1, 9].LetterMultiplier = 3;
-        Field[13, 5].LetterMultiplier = 3;
-        Field[13, 9].LetterMultiplier = 3;
+        Field[3, 1].LetterMultiplier = 3;
+        Field[3, 3].LetterMultiplier = 3;
+        Field[3, 7].LetterMultiplier = 3;
+        Field[3, 9].LetterMultiplier = 3;
+        Field[7, 1].LetterMultiplier = 3;
+        Field[7, 3].LetterMultiplier = 3;
+        Field[7, 7].LetterMultiplier = 3;
+        Field[7, 9].LetterMultiplier = 3;
+        Field[1, 3].LetterMultiplier = 3;
+        Field[1, 7].LetterMultiplier = 3;
+        Field[9, 3].LetterMultiplier = 3;
+        Field[9, 7].LetterMultiplier = 3;
+
         Field[0, 3].LetterMultiplier = 2;
-        Field[0, 11].LetterMultiplier = 2;
-        Field[14, 3].LetterMultiplier = 2;
-        Field[14, 11].LetterMultiplier = 2;
+        Field[0, 7].LetterMultiplier = 2;
+        Field[10, 3].LetterMultiplier = 2;
+        Field[10, 7].LetterMultiplier = 2;
+        Field[2, 4].LetterMultiplier = 2;
         Field[2, 6].LetterMultiplier = 2;
-        Field[2, 8].LetterMultiplier = 2;
-        Field[12, 6].LetterMultiplier = 2;
-        Field[12, 8].LetterMultiplier = 2;
-        Field[3, 0].LetterMultiplier = 2;
-        Field[3, 7].LetterMultiplier = 2;
-        Field[3, 14].LetterMultiplier = 2;
-        Field[11, 0].LetterMultiplier = 2;
-        Field[11, 7].LetterMultiplier = 2;
-        Field[11, 14].LetterMultiplier = 2;
-        Field[6, 2].LetterMultiplier = 2;
-        Field[6, 6].LetterMultiplier = 2;
-        Field[6, 8].LetterMultiplier = 2;
-        Field[6, 12].LetterMultiplier = 2;
-        Field[8, 2].LetterMultiplier = 2;
+        Field[8, 4].LetterMultiplier = 2;
         Field[8, 6].LetterMultiplier = 2;
-        Field[8, 8].LetterMultiplier = 2;
-        Field[8, 12].LetterMultiplier = 2;
-        Field[7, 3].LetterMultiplier = 2;
-        Field[7, 11].LetterMultiplier = 2;
+        Field[3, 0].LetterMultiplier = 2;
+        Field[3, 5].LetterMultiplier = 2;
+        Field[3, 10].LetterMultiplier = 2;
+        Field[7, 0].LetterMultiplier = 2;
+        Field[7, 5].LetterMultiplier = 2;
+        Field[7, 10].LetterMultiplier = 2;
+        Field[4, 2].LetterMultiplier = 2;
+       
     }
 
     #endregion Field generation

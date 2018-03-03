@@ -647,7 +647,7 @@ public class FieldH : MonoBehaviour
 
        
 
-        TextAsset textasset = (TextAsset)Resources.Load("total_words");
+        TextAsset textasset = (TextAsset)Resources.Load("sinhala_wordset");
 
         string content = textasset.text;
         string txt;
@@ -658,7 +658,7 @@ public class FieldH : MonoBehaviour
         reader = new System.IO.StringReader(textasset.text);
         if (reader == null)
         {
-            Debug.Log("puzzles.txt not found or not readable");
+            Debug.Log("sinhala_wordset.txt not found or not readable");
         }
         else
         {

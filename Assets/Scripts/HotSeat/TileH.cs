@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class TileH : MonoBehaviour, IDropHandler, IPointerClickHandler
 {
+    public Material LetterX3Material;
+
+
     public Text CurrentLetter;
     public Text PointsText;
     public string TempLetter;
@@ -32,6 +35,7 @@ public class TileH : MonoBehaviour, IDropHandler, IPointerClickHandler
     {
         if (CanDrop && !HasLetter)
         {
+            
             DragHandler.ObjectDragged.transform.position = new Vector3(-1500, -1500);//Prevents letter getting stuck on the field
             if (parent.CurrentDirection == FieldH.Direction.None ||
                 (parent.CurrentDirection == FieldH.Direction.Horizontal && Row == parent.CurrentTiles[0].Row) ||
@@ -50,6 +54,8 @@ public class TileH : MonoBehaviour, IDropHandler, IPointerClickHandler
                     }
                 }
                 HasLetter = true;
+                //parent.Field[Row, Column].GetComponent<Image>().material = ;
+                //parent.Field[Row, Column].GetComponent<Image>().material = LetterX3Material; //change the tile color when letter place
                 CurrentLetter.text = DragHandler.ObjectDragged.GetComponent<LetterH>().LetterText.text;
                 var letterPanel = DragHandler.ObjectDragged.transform.parent.gameObject.GetComponent<LetterBoxH>();
                 letterPanel.RemoveLetter();
@@ -106,7 +112,8 @@ public class TileH : MonoBehaviour, IDropHandler, IPointerClickHandler
         if (parent.CurrentPlayer == 1)
             parent.Player1.ChangeBox(1, CurrentLetter.text);
         else parent.Player2.ChangeBox(1, CurrentLetter.text);
-        CurrentLetter.text = "";
+        CurrentLetter.text= "";
+        
         parent.CurrentTiles.Remove(this);
         if (Row != 0) parent.Field[Row - 1, Column].CanDrop = CheckTile(parent.Field[Row - 1, Column]);
         if (Row != parent.NumberOfRows - 1) parent.Field[Row + 1, Column].CanDrop = CheckTile(parent.Field[Row + 1, Column]);

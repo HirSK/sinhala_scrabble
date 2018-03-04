@@ -30,15 +30,19 @@ Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_sc
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.366412 ms
+The referenced script on this Behaviour (Game Object 'Main Camera') is missing!
+ 
+(Filename:  Line: 1758)
+
+UnloadTime: 181.177444 ms
 Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\System.Transactions.dll (this message is harmless)
 Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\System.Xml.dll (this message is harmless)
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 26.653967 ms
+UnloadTime: 35.623839 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 579.
-Total: 95.165691 ms (FindLiveObjects: 0.052892 ms CreateObjectMapping: 0.023977 ms MarkObjects: 95.071189 ms  DeleteObjects: 0.016572 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 584.
+Total: 1.479581 ms (FindLiveObjects: 0.099437 ms CreateObjectMapping: 0.070523 ms MarkObjects: 1.272947 ms  DeleteObjects: 0.033851 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2de8 -> priority: 1 
-  Thread -> id: 1e70 -> priority: 1 
+  Thread -> id: 21fc -> priority: 1 
+  Thread -> id: 3544 -> priority: 1 

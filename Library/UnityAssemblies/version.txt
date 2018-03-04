@@ -1,5 +1,5 @@
 2017.1.0f3:3.1.0.0
-Android
+StandaloneWindows64
 F:/Softwares/Editor/Data/Managed/UnityEditor.dll
 F:/Softwares/Editor/Data/Managed/UnityEngine.dll
 F:/Softwares/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll

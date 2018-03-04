@@ -47,6 +47,8 @@ public class FieldH : MonoBehaviour
     public TileH[,] Field;
     public List<TileH> CurrentTiles;
 
+    public List<Material> CurrentTilesMaterials;
+
     private int _turnsSkipped = 0;
     private SqliteConnection _dbConnection;
     private List<TileH> _wordsFound;
@@ -59,6 +61,7 @@ public class FieldH : MonoBehaviour
     private void Start()
     {
         CurrentTiles = new List<TileH>();//just a list of tile objects...
+        CurrentTilesMaterials = new List<Material>();  //list of previous tile laterial
         var conection = @"URI=file:" + Application.streamingAssetsPath + @"/words.db";
         _dbConnection = new SqliteConnection(conection);
         _dbConnection.Open();
@@ -401,9 +404,11 @@ public class FieldH : MonoBehaviour
     {
         for (var i = CurrentTiles.Count - 1; i >= 0; i--)
         {
+            CurrentTiles[i].GetComponent<Image>().material = CurrentTilesMaterials[i];  //restore the tiles materials
             CurrentTiles[i].RemoveTile();
         }
         CurrentTiles.Clear();
+        CurrentTilesMaterials.Clear();
         CurrentDirection = Direction.None;
     }
 

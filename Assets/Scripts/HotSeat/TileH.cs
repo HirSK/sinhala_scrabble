@@ -55,7 +55,7 @@ public class TileH : MonoBehaviour, IDropHandler, IPointerClickHandler
                 }
                 HasLetter = true;
                 //parent.Field[Row, Column].GetComponent<Image>().material = ;
-                //parent.Field[Row, Column].GetComponent<Image>().material = LetterX3Material; //change the tile color when letter place
+                parent.Field[Row, Column].GetComponent<Image>().material = LetterX3Material; //change the tile color when letter place
                 CurrentLetter.text = DragHandler.ObjectDragged.GetComponent<LetterH>().LetterText.text;
                 var letterPanel = DragHandler.ObjectDragged.transform.parent.gameObject.GetComponent<LetterBoxH>();
                 letterPanel.RemoveLetter();

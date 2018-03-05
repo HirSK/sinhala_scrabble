@@ -186,8 +186,8 @@ public class UIController : MonoBehaviour
         if (winner == 1)
             Winner.text = player1Name;
         else Winner.text = player2Name;
-        Player1Name.text = "Бали " + player1Name;
-        Player2Name.text = "Бали " + player2Name;
+        Player1Name.text =  player1Name;
+        Player2Name.text =  player2Name;
         Player1Points.text = player1Score.ToString();
         Player2Points.text = player2Score.ToString();
         gameObject.GetComponent<Canvas>().enabled = false;

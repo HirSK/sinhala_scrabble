@@ -42,7 +42,6 @@ public class TileH : MonoBehaviour, IDropHandler, IPointerClickHandler
                 (parent.CurrentDirection == FieldH.Direction.Vertical && Column == parent.CurrentTiles[0].Column))
             {
                 parent.CurrentTiles.Add(this);
-                
                 if (parent.CurrentTiles.Count == 2)
                 {
                     if (parent.CurrentTiles[0].Row == Row) parent.CurrentDirection = FieldH.Direction.Horizontal;
@@ -55,8 +54,6 @@ public class TileH : MonoBehaviour, IDropHandler, IPointerClickHandler
                     }
                 }
                 HasLetter = true;
-                parent.CurrentTilesMaterials.Add(parent.Field[Row, Column].GetComponent<Image>().material); // to store the prev tiles material
-
                 //parent.Field[Row, Column].GetComponent<Image>().material = ;
                 parent.Field[Row, Column].GetComponent<Image>().material = LetterX3Material; //change the tile color when letter place
                 CurrentLetter.text = DragHandler.ObjectDragged.GetComponent<LetterH>().LetterText.text;

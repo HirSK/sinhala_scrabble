@@ -47,8 +47,6 @@ public class FieldH : MonoBehaviour
     public TileH[,] Field;
     public List<TileH> CurrentTiles;
 
-    public List<Material> CurrentTilesMaterials;
-
     private int _turnsSkipped = 0;
     private SqliteConnection _dbConnection;
     private List<TileH> _wordsFound;
@@ -61,7 +59,6 @@ public class FieldH : MonoBehaviour
     private void Start()
     {
         CurrentTiles = new List<TileH>();//just a list of tile objects...
-        CurrentTilesMaterials = new List<Material>();  //list of previous tile laterial
         var conection = @"URI=file:" + Application.streamingAssetsPath + @"/words.db";
         _dbConnection = new SqliteConnection(conection);
         _dbConnection.Open();
@@ -78,8 +75,8 @@ public class FieldH : MonoBehaviour
         Player1.LetterSize = new Vector2(letterSize, letterSize);
         Player2.LetterSize = new Vector2(letterSize, letterSize);
         CreateField();
-        Player1Text.text = PlayerPrefs.GetString("Player1", "Player 1");
-        Player2Text.text = PlayerPrefs.GetString("Player2", "Player 2");
+        Player1Text.text = PlayerPrefs.GetString("ක්‍රීඩකයා 1", "ක්‍රීඩකයා 1");
+        Player2Text.text = PlayerPrefs.GetString("ක්‍රීඩකයා 2", "ක්‍රීඩකයා 2");
     }
 
     private void Update()
@@ -404,11 +401,9 @@ public class FieldH : MonoBehaviour
     {
         for (var i = CurrentTiles.Count - 1; i >= 0; i--)
         {
-            CurrentTiles[i].GetComponent<Image>().material = CurrentTilesMaterials[i];  //restore the tiles materials
             CurrentTiles[i].RemoveTile();
         }
         CurrentTiles.Clear();
-        CurrentTilesMaterials.Clear();
         CurrentDirection = Direction.None;
     }
 

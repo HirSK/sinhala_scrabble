@@ -299,8 +299,8 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.94509804, g: 1, b: 0, a: 1}
+  m_Material: {fileID: 2100000, guid: b44885f81aacced4e86b1fb7113bd7ba, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -308,7 +308,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b44885f81aacced4e86b1fb7113bd7ba, type: 3}
     m_FontSize: 59
     m_FontStyle: 0
     m_BestFit: 1
@@ -1501,8 +1501,8 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.94509804, g: 1, b: 0, a: 1}
+  m_Material: {fileID: 2100000, guid: b44885f81aacced4e86b1fb7113bd7ba, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1510,7 +1510,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b44885f81aacced4e86b1fb7113bd7ba, type: 3}
     m_FontSize: 57
     m_FontStyle: 0
     m_BestFit: 1
@@ -1522,10 +1522,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\r\u0D91\u0DC0\u0DD0\u0DB1\u0DD2 \u0DC0\u0DA0\u0DB1\u0DBA\u0D9A\u0DCA \u0DB1\u0DDC\u0DB4\u0DC0\u0DAD\u0DD3
-    \u0DC4\u0DDD \u0D91\u0DBA \u0DB1\u0DDC\u0DB4\u0DC0\u0DAD\u0DD2\u0DB1 \u0DC0\u0DAF\u0DB1\u0D9A\u0DCA
-    \u0DB8\u0DAD \u0DAD\u0DC0\u0DAD\u0DCA \u0DC0\u0DA0\u0DB1\u0DBA\u0D9A\u0DCA \u0DC3\u0DB8\u0D9F
-    \u0D9A\u0DA7\u0DBA\u0DD4\u0DAD\u0DD4 \u0D9A\u0DBB\u0DBA\u0DD2."
+  m_Text: 'jpkh jeros kej; W;aidy lrkak '
 --- !u!222 &561142976
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2092,8 +2089,8 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.94509804, g: 1, b: 0, a: 1}
+  m_Material: {fileID: 2100000, guid: b44885f81aacced4e86b1fb7113bd7ba, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2176,15 +2173,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.33848873, g: 0, b: 0.5514706, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9cc83cd9ad55f24499fd38df494cc588, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2858,8 +2855,8 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.94509804, g: 1, b: 0, a: 1}
+  m_Material: {fileID: 2100000, guid: b44885f81aacced4e86b1fb7113bd7ba, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2867,7 +2864,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b44885f81aacced4e86b1fb7113bd7ba, type: 3}
     m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 1
@@ -3547,8 +3544,8 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.94509804, g: 1, b: 0, a: 1}
+  m_Material: {fileID: 2100000, guid: b44885f81aacced4e86b1fb7113bd7ba, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5456,8 +5453,8 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.12069706, g: 0.091371104, b: 0.47794116, a: 1}
+  m_Material: {fileID: 2100000, guid: b44885f81aacced4e86b1fb7113bd7ba, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5465,7 +5462,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b44885f81aacced4e86b1fb7113bd7ba, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 1
@@ -5477,11 +5474,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\r\u0D86\u0DBB\u0DB8\u0DCA\u0DB7\u0D9A \u0D9A\u0DCA\u0DC2\u0DDA\u0DAD\u0DCA\u200D\u0DBB\u0DBA
-    \u0DC0\u0DD9\u0DAD \u0DC4\u0DDD \u0D85\u0D9A\u0DD4\u0DBB\u0DD4 \u0DBD\u0DD2\u0DC0\u0DD3\u0DB8\u0DA7
-    \u0D86\u0DC3\u0DB1\u0DCA\u0DB1\u0DBA\u0DDA \u0D87\u0DAD\u0DD2 \u0D85\u0D9A\u0DD4\u0DBB\u0DA7
-    \u0D87\u0DAF\u0D9C\u0DD9\u0DB1 \u0DBA\u0DCF\u0DB8\u0DD9\u0DB1\u0DCA \u0D86\u0DBB\u0DB8\u0DCA\u0DB7
-    \u0D9A\u0DBB\u0DB1\u0DCA\u0DB1"
+  m_Text: 'wl=r weof.k hkak '
 --- !u!222 &2136781462
 CanvasRenderer:
   m_ObjectHideFlags: 0

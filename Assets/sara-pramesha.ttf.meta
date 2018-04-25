@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b44885f81aacced4e86b1fb7113bd7ba
+timeCreated: 1522411724
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SARA-PRAMESHA
+  fontNames:
+  - SARA-PRAMESHA
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

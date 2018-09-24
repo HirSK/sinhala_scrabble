@@ -7,25 +7,25 @@ Direct3D:
     VRAM:     2155 MB
     Driver:   21.20.16.4550
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
-Loading E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\Mono.Data.Sqlite.dll (this message is harmless)
-Loading E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\Mono.Data.Sqlite.dll into Unity Child Domain
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\System.Configuration.dll (this message is harmless)
-Loading E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\System.Configuration.dll into Unity Child Domain
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\System.Data.dll (this message is harmless)
-Loading E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\System.Data.dll into Unity Child Domain
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\System.dll (this message is harmless)
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.034 seconds
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\Mono.Data.Sqlite.dll (this message is harmless)
+Loading E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\Mono.Data.Sqlite.dll into Unity Child Domain
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\System.Configuration.dll (this message is harmless)
+Loading E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\System.Configuration.dll into Unity Child Domain
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\System.Data.dll (this message is harmless)
+Loading E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\System.Data.dll into Unity Child Domain
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\System.dll (this message is harmless)
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.082 seconds
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
@@ -34,15 +34,15 @@ The referenced script on this Behaviour (Game Object 'Main Camera') is missing!
  
 (Filename:  Line: 1758)
 
-UnloadTime: 181.177444 ms
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\System.Transactions.dll (this message is harmless)
-Platform assembly: E:\Third Year\Professional Practice\unity_projects\sinhala_scrabble - MyCopy\scrabble_Data\Managed\System.Xml.dll (this message is harmless)
+UnloadTime: 3.311424 ms
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\System.Transactions.dll (this message is harmless)
+Platform assembly: E:\Third Year\Professional Practice\2018-09-14\sinhala_scrabble\scrabble_Data\Managed\System.Xml.dll (this message is harmless)
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 35.623839 ms
+UnloadTime: 38.501519 ms
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 584.
-Total: 1.479581 ms (FindLiveObjects: 0.099437 ms CreateObjectMapping: 0.070523 ms MarkObjects: 1.272947 ms  DeleteObjects: 0.033851 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 610.
+Total: 7.359817 ms (FindLiveObjects: 0.054655 ms CreateObjectMapping: 0.022214 ms MarkObjects: 7.252974 ms  DeleteObjects: 0.028914 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 21fc -> priority: 1 
-  Thread -> id: 3544 -> priority: 1 
+  Thread -> id: 5a28 -> priority: 1 
+  Thread -> id: 794 -> priority: 1 

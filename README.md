@@ -1,0 +1,3 @@
+# Sinhala-Scrabble
+
+![](screbbleDemo.gif)
